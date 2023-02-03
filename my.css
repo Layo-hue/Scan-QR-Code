@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root{
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Dark-blue: hsl(218, 44%, 22%);
+}
+main{
+    padding:0 1em;
+}
+.container{
+    background-color: var(--Light-gray);
+    max-width: 375px;
+    height: 95vh;
+    /* margin-bottom: 1em; */
+    margin: auto;
+    padding-top: 2em;
+}
+.QRbox{
+    background-color: var(--White);
+    width: 80%;
+    border-radius: 15px;
+    margin: auto;
+    padding: 1em;
+}
+.QRbox img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1.5em;
+}
+.QR_deets{
+    padding: 0 1.5em;
+}
+.QR_deets p{
+    font-size: 15px;
+    font-weight: 400;
+  margin-top: 1em;
+  margin-bottom: 2em;
+    text-align: center;
+    color: var(--Grayish-blue);
+}
+.QR_deets h3{
+    font-weight: 700;
+    text-align: center;
+    color: var(--Dark-blue);
+}
+@media only screen and (min-width: 1000px ) {
+    .container{
+        max-width: 100%;
+    }
+    .QRbox{
+        width: 23%;
+        margin: auto;
+    }
+}
